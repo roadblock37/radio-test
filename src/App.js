@@ -1,5 +1,13 @@
+import Button from "./components/button";
+import Tile from "./components/tile";
+
 function App() {
-  return <p>radio test</p>;
+  return (
+    <>
+      <Button />
+      <Tile />
+    </>
+  );
 }
 
 export default App;
