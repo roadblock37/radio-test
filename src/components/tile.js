@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const Tile = ({ id, title, image, timeframes, color }) => {

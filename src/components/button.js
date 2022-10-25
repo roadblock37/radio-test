@@ -1,4 +1,7 @@
+import { useDispatch, useSelector } from "react-redux";
 const Button = () => {
+  const dispatch = useDispatch();
+  const { setTimeFrame } = useSelector((store) => store.hours);
   const filters = [
     {
       id: 1,
@@ -19,9 +22,16 @@ const Button = () => {
       {filters.map((item) => {
         const { id, filter } = item;
         return (
-          <button type="radio" key={id}>
-            {filter}
-          </button>
+          <div>
+            <label for={filter}>{filter}</label>
+            <input
+              type="radio"
+              name="filterGroup"
+              id={filter}
+              key={id}
+              onClick={() => dispatch(setTimeFrame)}
+            />
+          </div>
         );
       })}
     </>
