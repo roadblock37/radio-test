@@ -3,6 +3,7 @@ import Data from "../data";
 
 const initialState = {
   defaultState: Data,
+  defaultTimeFrame: "weekly",
 };
 const hourSlice = createSlice({
   name: "hours",
