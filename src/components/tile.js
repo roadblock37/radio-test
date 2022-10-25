@@ -1,6 +1,15 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-
+// const Tile = ({ hours }) => {
+//   return (
+//     <div>
+//       {hours.timeframes.map((timeframe) => {
+//         console.log(hours);
+//         return <></>;
+//       })}
+//     </div>
+//   );
+// };
 const Tile = ({ hours }) => {
   return (
     <>
