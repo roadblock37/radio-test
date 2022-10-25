@@ -9,8 +9,8 @@ const hourSlice = createSlice({
   name: "hours",
   initialState,
   reducers: {
-    setTimeFrame: (state, payload) => {
-      const radioId = payload.id;
+    setTimeFrame: (state, action) => {
+      const radioId = action.payload;
       state.defaultTimeFrame = radioId;
     },
   },

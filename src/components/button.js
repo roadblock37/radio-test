@@ -29,7 +29,7 @@ const Button = () => {
               name="filterGroup"
               id={filter}
               key={id}
-              onClick={() => dispatch(setTimeFrame)}
+              onClick={() => dispatch(setTimeFrame())}
             />
           </div>
         );
