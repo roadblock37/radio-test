@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import hourSlice from "../features/hourSlice";
 const Button = () => {
   const dispatch = useDispatch();
   const { setTimeFrame } = useSelector((store) => store.hours);
@@ -22,19 +23,17 @@ const Button = () => {
       {filters.map((item) => {
         const { id, filter } = item;
         return (
-          <div>
-            <label for={filter}>{filter}</label>
             <input
               type="radio"
               name="filterGroup"
               id={filter}
+              value={filter}
               key={id}
-              onClick={() => dispatch(setTimeFrame())}
+              onClick={() => dispatch()}
             />
-          </div>
         );
-      })}
-    </>
+      }, [])}
+      </>
   );
 };
 
