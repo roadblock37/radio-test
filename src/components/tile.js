@@ -28,8 +28,8 @@ const Tile = ({ id, title, image, timeframes, color }) => {
           </svg>
         </span>
         <span className="hour-container">
-          <h1>{timeframes.weekly.current} Hrs</h1>
-          <p>Last week - {timeframes.weekly.previous} hrs</p>
+          <h1>current timeframe Hrs</h1>
+          <p>Last week - previous timefram hrs</p>
         </span>
       </div>
     </div>

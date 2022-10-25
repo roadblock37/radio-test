@@ -3,13 +3,16 @@ import { useState } from "react";
 import Button from "./components/button";
 import Tile from "./components/tile";
 import Data from "./data";
+import TileContainer from "./components/tileContainer";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
-  const [hours, setHours] = useState(Data);
+  const dispatch = useDispatch();
+  const { defaultState } = useSelector((store) => store.hours);
   return (
-    <>
-      <Tile hours={hours} />
-    </>
+    <section>
+      <TileContainer />
+    </section>
   );
 }
 
