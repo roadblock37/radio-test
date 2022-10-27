@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Button = ({ id, filter }) => {
   const dispatch = useDispatch();
+  const defaultTimeFrame = useSelector((store) => store.hours);
 
   return (
     <input
@@ -12,6 +13,7 @@ const Button = ({ id, filter }) => {
       id={id}
       value={filter}
       type="radio"
+      //   pass id into onClick to update timeframe state
       onClick={() => {
         dispatch(setTimeFrame(id));
       }}></input>

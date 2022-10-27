@@ -70,7 +70,7 @@ const Tile = ({ id, title, image, timeframes, color }) => {
           </span>
           <span className="hour-container">
             <h1>{timeframes.daily.current} Hrs</h1>
-            <p>Last week - {timeframes.daily.previous} Hrs</p>
+            <p>Yesterday - {timeframes.daily.previous} Hrs</p>
           </span>
         </div>
       </div>
@@ -103,7 +103,7 @@ const Tile = ({ id, title, image, timeframes, color }) => {
           </span>
           <span className="hour-container">
             <h1>{timeframes.monthly.current} Hrs</h1>
-            <p>Last week - {timeframes.monthly.previous} Hrs</p>
+            <p>Last month - {timeframes.monthly.previous} Hrs</p>
           </span>
         </div>
       </div>
