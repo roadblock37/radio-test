@@ -1,40 +1,20 @@
+import React from "react";
+import { setTimeFrame } from "../features/hourSlice";
 import { useDispatch, useSelector } from "react-redux";
-import hourSlice from "../features/hourSlice";
-const Button = () => {
+
+const Button = ({ id, filter }) => {
   const dispatch = useDispatch();
-  const { setTimeFrame } = useSelector((store) => store.hours);
-  const filters = [
-    {
-      id: 1,
-      filter: "daily",
-    },
-    {
-      id: 2,
-      filter: "weekly",
-    },
-    {
-      id: 3,
-      filter: "monthly",
-    },
-  ];
 
   return (
-    <>
-      {filters.map((item) => {
-        const { id, filter } = item;
-        return (
-            <input
-              type="radio"
-              name="filterGroup"
-              id={filter}
-              value={filter}
-              key={id}
-              onClick={() => dispatch()}
-            />
-        );
-      }, [])}
-      </>
+    <input
+      key={id}
+      name="filterGroup"
+      id={id}
+      value={filter}
+      type="radio"
+      onClick={() => {
+        dispatch(setTimeFrame(id));
+      }}></input>
   );
 };
-
 export default Button;
