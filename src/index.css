@@ -203,11 +203,22 @@ input[type="radio"]:checked + label {
    .tile-grid {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      column-gap: 1rem;
+      row-gap: 1rem;
+      padding: 10rem 5rem;
 
    }
 
    .employee-container {
       grid-column: 1 / span 1;
       grid-row: 1 / span 2;
+   }
+
+   .employee-card {
+      flex-direction: column;
+   }
+
+   .filter-container {
+      flex-direction: column;
    }
  }
