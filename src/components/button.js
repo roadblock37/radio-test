@@ -7,6 +7,8 @@ const Button = ({ id, filter }) => {
   const defaultTimeFrame = useSelector((store) => store.hours);
 
   return (
+    <div>
+      <label for={filter}>{filter}</label>
     <input
       key={id}
       name="filterGroup"
@@ -17,6 +19,8 @@ const Button = ({ id, filter }) => {
       onClick={() => {
         dispatch(setTimeFrame(id));
       }}></input>
+    </div>
+    
   );
 };
 export default Button;
