@@ -16,6 +16,8 @@
 
  }
 
+ 
+
 
  /* 
  =================
@@ -193,3 +195,19 @@ input[type="radio"]:checked + label {
    border-radius: 50%;
    background-color: var(--primaryText);
 }
+
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+   .tile-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+   }
+
+   .employee-container {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+   }
+ }
