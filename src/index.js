@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* wrap entire app in Provider and 
-  pass store as a prop to set global state */}
+pass store as a prop to set global state */}
     <Provider store={store}>
       <App />
     </Provider>
