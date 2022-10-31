@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* =================
+    color variables
+   =================
+ */
+
+ :root {
+  --primaryBackground: #0E1323;
+  --tileBackground: #1C204B;
+  --tileHover: #33397A;
+  --primaryText: #FFFFFF;
+  --secondaryText: #BBC0FF;
+  --employeeBackground: #7078C9;
+
+ }
+
+
+ /* 
+ =================
+ universal styling
+ =================
+ */
+
+ *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--primaryBackground);
+  color: var(--primaryText);
+ }
+
+ /* grid container that holds all tiles */
+ .tile-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2rem;
+ }
+
+ /* img {
+  max-width: 20%;
+  height: auto;
+ } */
+
+ 
+
+ /* 
+ ==================
+ Tile component
+ ==================
+ */
+
+.tile {
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+ /* tile container that holds the info tile and has the background on top of the tile */
+ .info-tile {
+  background-color: var(--tileBackground);
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 75%;
+  width: 100%;
+  margin-top: 15%;
+ }
+
+ /* flex container holding the tile title and the menu icon */
+ .title-container {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .hour-container {
+  display: flex;
+  justify-content: space-between;
+
+ }
+
+ /* 
+ =================
+ Employee Tile
+ =================
+ */
+
+ .employee-container {
+  background-color: var(--tileBackground);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+
+ /* section in employee container with employee information and img*/
+ .employee-card {
+  background-color: var(--employeeBackground);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+ }
+
+ /* info container with employee name */
+ .employee-info {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .employee-info h1 {
+  font-size: 1.75rem;
+ }
+
+ .employee-info p {
+  font-size: 0.8rem;
+ }
+
+ /* flex container holding filter buttons */
+ .filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-bottom: 1rem;
+ }
+
+ .filter-container label {
+  font-size: 1.25rem;
+ }

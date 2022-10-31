@@ -10,11 +10,13 @@ const TileContainer = () => {
 Tile component for each item */
   }
   return (
-    <div>
+    <>
       {defaultState.map((item) => {
         return <Tile key={item.id} {...item} />;
       })}
-    </div>
+    </>
+      
+    
   );
 };
 export default TileContainer;

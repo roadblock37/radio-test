@@ -1,14 +1,11 @@
 import React from "react";
-import ButtonContainer from "./components/buttonContainer";
 import TileContainer from "./components/tileContainer";
-import { useDispatch, useSelector } from "react-redux";
+import Employee from "./components/employee";
 
 function App() {
-  const dispatch = useDispatch();
-  const { defaultState } = useSelector((store) => store.hours);
   return (
-    <section>
-      <ButtonContainer />
+    <section className="tile-grid">
+      <Employee />
       <TileContainer />
     </section>
   );
