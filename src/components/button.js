@@ -35,6 +35,8 @@ const Button = ({ id, filter }) => {
       id={id}
       value={filter}
       type="radio"
+      // radio button will be check by default if the 
+      // defaultTimeFrame equals the filter name
       checked={defaultTimeFrame === filter}
       //   pass id into onClick to update timeframe state
       onClick={() => {
