@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/time-tracker-redux/static/css/main.d7d96224.css",
+    "main.js": "/time-tracker-redux/static/js/main.68dbcb0e.js",
+    "index.html": "/time-tracker-redux/index.html",
+    "main.d7d96224.css.map": "/time-tracker-redux/static/css/main.d7d96224.css.map",
+    "main.68dbcb0e.js.map": "/time-tracker-redux/static/js/main.68dbcb0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7d96224.css",
+    "static/js/main.68dbcb0e.js"
+  ]
+}
