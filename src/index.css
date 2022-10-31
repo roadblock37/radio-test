@@ -12,6 +12,7 @@
   --primaryText: #FFFFFF;
   --secondaryText: #BBC0FF;
   --employeeBackground: #7078C9;
+  --labelText: #7078C9;
 
  }
 
@@ -59,6 +60,11 @@ input[type="radio"]:checked + label {
   height: auto;
  }
 
+ h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+ }
+
  
 
  /* 
@@ -86,16 +92,31 @@ input[type="radio"]:checked + label {
   margin-top: 15%;
  }
 
+ .info-tile:hover{
+    cursor: pointer;
+    background-color: var(--tileHover);
+ }
+
  /* flex container holding the tile title and the menu icon */
  .title-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+ }
+
+ svg:hover {
+    cursor: pointer;
+    fill: var(--primaryText);
  }
 
  .hour-container {
   display: flex;
   justify-content: space-between;
+ }
 
+ .hour-container p {
+    color: var(--secondaryText);
  }
 
  /* 
@@ -149,7 +170,7 @@ input[type="radio"]:checked + label {
 
  .filter-container label {
   font-size: 1.25rem;
-  color: var(--secondaryText);
+  color: var(--labelText);
  }
 
  .filter-container label:hover {
