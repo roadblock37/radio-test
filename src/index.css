@@ -41,19 +41,23 @@
   row-gap: 2rem;
  }
 
- /* radio button styling */
+    /* radio button styling */
+
+ /* hide the radio button */
  input[type="radio"] {
     opacity: 0;
     width: 0;
  }
+
+ /* label for radio button is white when checked */
 input[type="radio"]:checked + label {
     color: var(--primaryText);
  }
 
- /* img {
+ img {
   max-width: 20%;
   height: auto;
- } */
+ }
 
  
 
