@@ -40,6 +40,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 2rem;
+  padding: 4rem 1rem;
  }
 
     /* radio button styling */
@@ -142,12 +143,12 @@ input[type="radio"]:checked + label {
  .employee-card {
   background-color: var(--employeeBackground);
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
  }
 
  /* info container with employee name */
