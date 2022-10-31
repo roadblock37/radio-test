@@ -28,7 +28,6 @@ const Button = ({ id, filter }) => {
 
   return (
     <div>
-      <label for={filter}>{filter}</label>
     <input
       key={id}
       name="filterGroup"
@@ -42,6 +41,7 @@ const Button = ({ id, filter }) => {
       onClick={() => {
         dispatch(setTimeFrame(id));
       }}></input>
+      <label for={filter}>{filter}</label>
     </div>
     
   );

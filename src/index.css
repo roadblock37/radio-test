@@ -41,6 +41,15 @@
   row-gap: 2rem;
  }
 
+ /* radio button styling */
+ input[type="radio"] {
+    opacity: 0;
+    width: 0;
+ }
+input[type="radio"]:checked + label {
+    color: var(--primaryText);
+ }
+
  /* img {
   max-width: 20%;
   height: auto;
@@ -136,4 +145,10 @@
 
  .filter-container label {
   font-size: 1.25rem;
+  color: var(--secondaryText);
  }
+
+ .filter-container label:hover {
+    color: var(--primaryText);
+    cursor: pointer;
+   }
