@@ -116,8 +116,6 @@ input[type="radio"]:checked + label {
   font-size: 1.25rem;
  }
 
- 
-
  .hour-container {
   display: flex;
   justify-content: space-between;
@@ -229,4 +227,17 @@ input[type="radio"]:checked + label {
   height: 35%;
 
    }
+
+   .hour-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+     }
+
+   .hour-container h1 {
+      margin-bottom: 0.75rem;
+   }
+   
+
+   
  }
