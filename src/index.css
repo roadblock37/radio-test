@@ -216,9 +216,17 @@ input[type="radio"]:checked + label {
 
    .employee-card {
       flex-direction: column;
+      align-items: flex-start;
+  justify-content: space-around;
+      height: 65%;
+      padding: 1rem;
+  margin-bottom: 1rem;
    }
 
    .filter-container {
       flex-direction: column;
+  justify-content: space-evenly;
+  height: 35%;
+
    }
  }
